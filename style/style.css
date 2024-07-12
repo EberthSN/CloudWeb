@@ -75,6 +75,11 @@ body::before {
     height: 85vh;
 }
 
+h1 {
+    color: #fe9492;
+    font-weight: bold;
+}
+
 .foto {
     margin: 38px;
     padding: 20px;
@@ -84,12 +89,15 @@ body::before {
 }
 
 .text-container {
+    margin: 50px;
+    padding-left: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .cursosCloud {
+    font-size: 1.5em;
     padding: 0;
     margin: 0;
     display: flex;
