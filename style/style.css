@@ -1,0 +1,108 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    position: relative;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/cloud.jpg');
+    background-size: contain; /* Ensure the background image fits within the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    opacity: 0.5; /* Adjust the opacity */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    color: white; /* Text color */
+    padding: 20px;
+}
+
+.curso {
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #fe9492;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+
+.docente {
+    font-weight: bold;
+    background-color: #ffdd7f;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alumno {
+    background-color: #7fd5a2;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medio {
+    display: flex;
+    align-items: flex-start;
+    height: 85vh;
+}
+
+.foto {
+    margin: 38px;
+    padding: 20px;
+    width: 372px;
+    height: 496px;
+    text-align: left;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cursosCloud {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.final {
+    background-color: #95c1fd;
+    text-align: center;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
